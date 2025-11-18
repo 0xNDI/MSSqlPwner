@@ -231,6 +231,8 @@ class Playbooks(Operations):
                     self.state = json.load(open(self.state_filename))
                 else:
                     self.retrieve_links_recursive()
+            else:
+                self.retrieve_links_recursive()
         else:
             self.retrieve_links_recursive()
 
