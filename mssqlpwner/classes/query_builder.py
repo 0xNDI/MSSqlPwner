@@ -21,7 +21,7 @@ class QueryBuilder(BaseSQLClient, ABC):
         self,
         chain_id: str,
         query: str,
-        method: str = "OpenQuery",
+        method: str = "exec_at",
         decode_results: bool = True,
         print_results: bool = False,
         adsi_provider: str = None,
